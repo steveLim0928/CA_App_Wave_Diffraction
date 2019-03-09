@@ -10,14 +10,23 @@ def barrier(canvas, gap_size):
     canvas.create_rectangle(250, below_gap, 260, 345, fill = 'sky blue', outline = 'black')
 #black screen
 def screen(canvas, screen_offset):
+    # Mac
+#    canvas.create_rectangle(600 - screen_offset, 5, 650 - screen_offset, 345, fill = 'black', outline = 'black', angle = -90)
+#    canvas.create_text((625 - screen_offset, 170), text = 'Screen', fill = 'white', angle = -90)
     
+    # Window
     canvas.create_rectangle(600 - screen_offset, 5, 650 - screen_offset, 345, fill = 'black', outline = 'black')
-    canvas.create_text((625 - screen_offset, 170), text = 'Screen', angle = -90, fill = 'white')
+    canvas.create_text((625 - screen_offset, 170), text = 'Screen', fill = 'white')
 
 #screen where light is emitted
 def screen2(canvas, colour):
+    # Mac
+#    canvas.create_rectangle(10, 5, 30, 345, fill = colour, outline = 'black', angle = -90)
+#    canvas.create_text((20, 170), text = 'Light Generator', fill = 'black', angle = -90)
+    
+    # Window
     canvas.create_rectangle(10, 5, 30, 345, fill = colour, outline = 'black' )
-    canvas.create_text((20, 170), text = 'Light Generator', angle = 90, fill = 'black')
+    canvas.create_text((20, 170), text = 'L\nI\nG\nH\nT\n\nG\nE\nN\nE\nR\nA\nT\nO\nR', fill = 'black')
 
 #initial value of the wave
 global x

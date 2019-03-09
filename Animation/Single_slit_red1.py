@@ -1,26 +1,4 @@
 import Tkinter
-##
-###
-###
-###
-###
-###adjustable gap size
-##global gap_size
-##gap_size = 10
-###
-###
-###
-###
-###
-##
-##global below_gap
-##below_gap = 170 + gap_size
-##global above_gap
-##above_gap = 170 - gap_size
-
-
-
-# functions for the animation items
 
 # gap function
 def barrier(canvas, gap_size):
@@ -31,13 +9,23 @@ def barrier(canvas, gap_size):
 
 #black screen
 def screen(canvas, screen_offset):
+    # Mac
+#   canvas.create_rectangle(600 - screen_offset, 5, 650 - screen_offset, 345, fill = 'black', outline = 'black', angle = -90)
+#  canvas.create_text((625 - screen_offset, 170), text = 'Screen', fill = 'white', angle = -90)
+    
+    # Window
     canvas.create_rectangle(600 - screen_offset, 5, 650 - screen_offset, 345, fill = 'black', outline = 'black')
-    canvas.create_text((625 - screen_offset, 170), text = 'Screen', angle = -90, fill = 'white')
+    canvas.create_text((625 - screen_offset, 170), text = 'Screen', fill = 'white')
 
 #screen where light is emitted
 def screen2(canvas, colour):
+    # Mac
+#    canvas.create_rectangle(50, 5, 70, 345, fill = colour, outline = 'black', angle = -90 )
+#    canvas.create_text((60, 170), text = 'Light Generator', fill = 'black', angle = -90)
+    
+    # Window
     canvas.create_rectangle(50, 5, 70, 345, fill = colour, outline = 'black' )
-    canvas.create_text((60, 170), text = 'Light Generator', angle = 90, fill = 'black')
+    canvas.create_text((60, 170), text = 'L\nI\nG\nH\nT\n\nG\nE\nN\nE\nR\nA\nT\nO\nR', fill = 'black')
 
 #initial value of the wave
 global x
