@@ -204,7 +204,7 @@ Q10_ans = ['(π/4) rad','(π/2) rad','(π) rad','(3π/2) rad']#C
 
 
 
-quiz = Quiz(root, int(0.2* 60),
+quiz = Quiz(root, int(8 * 60),
             [Q1,Q2,
              Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10],
             {1: 1, 2: 1, 3:3,4:2 ,5:4, 6:2 , 7:1 ,8:3, 9:4, 10:3}, {1: Q1_ans, 2: Q2_ans, 3:Q3_ans, 4:Q4_ans,5:Q5_ans,6:Q6_ans,7:Q7_ans,8:Q8_ans,9:Q9_ans,10:Q10_ans})
